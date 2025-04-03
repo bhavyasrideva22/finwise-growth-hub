@@ -1,13 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Layout from "@/components/layout/Layout";
+import CompoundInterestCalculator from "@/components/calculators/CompoundInterestCalculator";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <Layout>
+      <div className="max-w-7xl mx-auto">
+        <section className="mb-8">
+          <h1 className="text-4xl font-bold text-primary mb-2">Compound Interest Calculator</h1>
+          <p className="text-lg text-textDark">
+            Plan your financial future with our interactive calculator and visualize the power of compound interest.
+          </p>
+        </section>
+        
+        <CompoundInterestCalculator />
       </div>
-    </div>
+    </Layout>
   );
 };
 
